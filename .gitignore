@@ -1,0 +1,11 @@
+*.o
+*.log
+*.dvi
+*.pdf
+*_flymake*
+*.hi
+*.nav
+*.out
+*.aux
+*.snm
+*.toc

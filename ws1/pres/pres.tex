@@ -1,0 +1,64 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usetheme{Szeged}
+
+\lstset{
+  language=Haskell,
+  basicstyle=\footnotesize,
+  numbers=left,
+  frame=single,
+  showspaces=false,
+  showtabs=false,
+  showstringspaces=false,
+  numberstyle=\tiny
+}
+  
+\begin{document}
+
+\begin{frame}{Agenda}
+  \begin{itemize}
+    \item Kjapt om syntax med eksempler og ghci-tour
+    \item Lite, men ikke-trivielt eksempel
+    \item ?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Hello, World}
+\lstinputlisting{hw.hs}
+\lstinputlisting[language=bash]{run.sh}
+\end{frame}
+
+\begin{frame}{ghci}
+  Note to self: kjapp demo (ting som er forskjellig i ghci)
+  \begin{description}[align=left]
+    \item[Typen til x] :t x
+    \item[Informasjon om ting] :i ting
+    \item[Last inn fil.hs] :l fil
+    \item[Importer modul] :m Data.List Data.Map
+    \item[Hjelp] :?
+  \end{description}
+  Kraftige greier, kan brukes til debugging mm om man vet hvordan.
+\end{frame}
+
+\begin{frame}{Kjapt om type-deklarasjoner og partials}
+\lstinputlisting{typer.hs}
+\end{frame}
+
+\begin{frame}{Partials og typer del 2}
+\lstinputlisting{partials.hs}  
+\end{frame}
+
+
+\begin{frame}{Egendefinerte typer og pattern-matching}
+\lstinputlisting{egen.hs}  
+\end{frame}
+
+
+\begin{frame}{Mer om egendefinerte typer}
+\lstinputlisting{egen2.hs}  
+\end{frame}
+
+\end{document}
