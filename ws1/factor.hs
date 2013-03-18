@@ -13,11 +13,12 @@ factors n = loop n 2
 
 printFactors :: [String] -> IO ()
 printFactors = mapM_ printFactors'
-  where printFactors' s = let n = read s
+  where printFactors' s = let n = read s :: Integer
                               f = map show $ factors n
                               e = s ++ ":"
                           in putStrLn $ intercalate " " (e : f)
 
+main :: IO ()
 main = do
   args <- getArgs
   if length args > 0 then
